@@ -1,0 +1,710 @@
+[
+ {
+  "batch_id": "A_001",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_001.csv"
+ },
+ {
+  "batch_id": "A_002",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_002.csv"
+ },
+ {
+  "batch_id": "A_003",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_003.csv"
+ },
+ {
+  "batch_id": "A_004",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_004.csv"
+ },
+ {
+  "batch_id": "A_005",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_005.csv"
+ },
+ {
+  "batch_id": "A_006",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_006.csv"
+ },
+ {
+  "batch_id": "A_007",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_007.csv"
+ },
+ {
+  "batch_id": "A_008",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_008.csv"
+ },
+ {
+  "batch_id": "A_009",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_009.csv"
+ },
+ {
+  "batch_id": "A_010",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_010.csv"
+ },
+ {
+  "batch_id": "A_011",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_011.csv"
+ },
+ {
+  "batch_id": "A_012",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_012.csv"
+ },
+ {
+  "batch_id": "A_013",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_013.csv"
+ },
+ {
+  "batch_id": "A_014",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_014.csv"
+ },
+ {
+  "batch_id": "A_015",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_015.csv"
+ },
+ {
+  "batch_id": "A_016",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_016.csv"
+ },
+ {
+  "batch_id": "A_017",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_017.csv"
+ },
+ {
+  "batch_id": "A_018",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_018.csv"
+ },
+ {
+  "batch_id": "A_019",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_019.csv"
+ },
+ {
+  "batch_id": "A_020",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_020.csv"
+ },
+ {
+  "batch_id": "A_021",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_021.csv"
+ },
+ {
+  "batch_id": "A_022",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_022.csv"
+ },
+ {
+  "batch_id": "A_023",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_023.csv"
+ },
+ {
+  "batch_id": "A_024",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_024.csv"
+ },
+ {
+  "batch_id": "A_025",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_025.csv"
+ },
+ {
+  "batch_id": "A_026",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_026.csv"
+ },
+ {
+  "batch_id": "A_027",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_027.csv"
+ },
+ {
+  "batch_id": "A_028",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_028.csv"
+ },
+ {
+  "batch_id": "A_029",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_029.csv"
+ },
+ {
+  "batch_id": "A_030",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_030.csv"
+ },
+ {
+  "batch_id": "A_031",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_031.csv"
+ },
+ {
+  "batch_id": "A_032",
+  "tier": "A",
+  "n_assets": 60,
+  "file": "data/interim/enrichment/batches/A_032.csv"
+ },
+ {
+  "batch_id": "A_033",
+  "tier": "A",
+  "n_assets": 17,
+  "file": "data/interim/enrichment/batches/A_033.csv"
+ },
+ {
+  "batch_id": "B1_001",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_001.csv"
+ },
+ {
+  "batch_id": "B1_002",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_002.csv"
+ },
+ {
+  "batch_id": "B1_003",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_003.csv"
+ },
+ {
+  "batch_id": "B1_004",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_004.csv"
+ },
+ {
+  "batch_id": "B1_005",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_005.csv"
+ },
+ {
+  "batch_id": "B1_006",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_006.csv"
+ },
+ {
+  "batch_id": "B1_007",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_007.csv"
+ },
+ {
+  "batch_id": "B1_008",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_008.csv"
+ },
+ {
+  "batch_id": "B1_009",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_009.csv"
+ },
+ {
+  "batch_id": "B1_010",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_010.csv"
+ },
+ {
+  "batch_id": "B1_011",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_011.csv"
+ },
+ {
+  "batch_id": "B1_012",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_012.csv"
+ },
+ {
+  "batch_id": "B1_013",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_013.csv"
+ },
+ {
+  "batch_id": "B1_014",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_014.csv"
+ },
+ {
+  "batch_id": "B1_015",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_015.csv"
+ },
+ {
+  "batch_id": "B1_016",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_016.csv"
+ },
+ {
+  "batch_id": "B1_017",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_017.csv"
+ },
+ {
+  "batch_id": "B1_018",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_018.csv"
+ },
+ {
+  "batch_id": "B1_019",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_019.csv"
+ },
+ {
+  "batch_id": "B1_020",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_020.csv"
+ },
+ {
+  "batch_id": "B1_021",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_021.csv"
+ },
+ {
+  "batch_id": "B1_022",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_022.csv"
+ },
+ {
+  "batch_id": "B1_023",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_023.csv"
+ },
+ {
+  "batch_id": "B1_024",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_024.csv"
+ },
+ {
+  "batch_id": "B1_025",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_025.csv"
+ },
+ {
+  "batch_id": "B1_026",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_026.csv"
+ },
+ {
+  "batch_id": "B1_027",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_027.csv"
+ },
+ {
+  "batch_id": "B1_028",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_028.csv"
+ },
+ {
+  "batch_id": "B1_029",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_029.csv"
+ },
+ {
+  "batch_id": "B1_030",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_030.csv"
+ },
+ {
+  "batch_id": "B1_031",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_031.csv"
+ },
+ {
+  "batch_id": "B1_032",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_032.csv"
+ },
+ {
+  "batch_id": "B1_033",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_033.csv"
+ },
+ {
+  "batch_id": "B1_034",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_034.csv"
+ },
+ {
+  "batch_id": "B1_035",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_035.csv"
+ },
+ {
+  "batch_id": "B1_036",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_036.csv"
+ },
+ {
+  "batch_id": "B1_037",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_037.csv"
+ },
+ {
+  "batch_id": "B1_038",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_038.csv"
+ },
+ {
+  "batch_id": "B1_039",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_039.csv"
+ },
+ {
+  "batch_id": "B1_040",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_040.csv"
+ },
+ {
+  "batch_id": "B1_041",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_041.csv"
+ },
+ {
+  "batch_id": "B1_042",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_042.csv"
+ },
+ {
+  "batch_id": "B1_043",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_043.csv"
+ },
+ {
+  "batch_id": "B1_044",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_044.csv"
+ },
+ {
+  "batch_id": "B1_045",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_045.csv"
+ },
+ {
+  "batch_id": "B1_046",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_046.csv"
+ },
+ {
+  "batch_id": "B1_047",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_047.csv"
+ },
+ {
+  "batch_id": "B1_048",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_048.csv"
+ },
+ {
+  "batch_id": "B1_049",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_049.csv"
+ },
+ {
+  "batch_id": "B1_050",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_050.csv"
+ },
+ {
+  "batch_id": "B1_051",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_051.csv"
+ },
+ {
+  "batch_id": "B1_052",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_052.csv"
+ },
+ {
+  "batch_id": "B1_053",
+  "tier": "B1",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B1_053.csv"
+ },
+ {
+  "batch_id": "B1_054",
+  "tier": "B1",
+  "n_assets": 34,
+  "file": "data/interim/enrichment/batches/B1_054.csv"
+ },
+ {
+  "batch_id": "C_001",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_001.csv"
+ },
+ {
+  "batch_id": "C_002",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_002.csv"
+ },
+ {
+  "batch_id": "C_003",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_003.csv"
+ },
+ {
+  "batch_id": "C_004",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_004.csv"
+ },
+ {
+  "batch_id": "C_005",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_005.csv"
+ },
+ {
+  "batch_id": "C_006",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_006.csv"
+ },
+ {
+  "batch_id": "C_007",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_007.csv"
+ },
+ {
+  "batch_id": "C_008",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_008.csv"
+ },
+ {
+  "batch_id": "C_009",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_009.csv"
+ },
+ {
+  "batch_id": "C_010",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_010.csv"
+ },
+ {
+  "batch_id": "C_011",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_011.csv"
+ },
+ {
+  "batch_id": "C_012",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_012.csv"
+ },
+ {
+  "batch_id": "C_013",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_013.csv"
+ },
+ {
+  "batch_id": "C_014",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_014.csv"
+ },
+ {
+  "batch_id": "C_015",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_015.csv"
+ },
+ {
+  "batch_id": "C_016",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_016.csv"
+ },
+ {
+  "batch_id": "C_017",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_017.csv"
+ },
+ {
+  "batch_id": "C_018",
+  "tier": "C",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/C_018.csv"
+ },
+ {
+  "batch_id": "C_019",
+  "tier": "C",
+  "n_assets": 81,
+  "file": "data/interim/enrichment/batches/C_019.csv"
+ },
+ {
+  "batch_id": "B2_001",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_001.csv"
+ },
+ {
+  "batch_id": "B2_002",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_002.csv"
+ },
+ {
+  "batch_id": "B2_003",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_003.csv"
+ },
+ {
+  "batch_id": "B2_004",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_004.csv"
+ },
+ {
+  "batch_id": "B2_005",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_005.csv"
+ },
+ {
+  "batch_id": "B2_006",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_006.csv"
+ },
+ {
+  "batch_id": "B2_007",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_007.csv"
+ },
+ {
+  "batch_id": "B2_008",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_008.csv"
+ },
+ {
+  "batch_id": "B2_009",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_009.csv"
+ },
+ {
+  "batch_id": "B2_010",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_010.csv"
+ },
+ {
+  "batch_id": "B2_011",
+  "tier": "B2",
+  "n_assets": 90,
+  "file": "data/interim/enrichment/batches/B2_011.csv"
+ },
+ {
+  "batch_id": "B2_012",
+  "tier": "B2",
+  "n_assets": 88,
+  "file": "data/interim/enrichment/batches/B2_012.csv"
+ }
+]
