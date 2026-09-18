@@ -1,0 +1,6 @@
+# large raw / interim data are re-creatable with scripts/ (see README)
+data/raw/
+data/interim/*.parquet
+__pycache__/
+*.pyc
+.venv/
