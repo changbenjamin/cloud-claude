@@ -4,3 +4,4 @@ data/interim/*.parquet
 __pycache__/
 *.pyc
 .venv/
+data/processed/asset_classification_all.csv

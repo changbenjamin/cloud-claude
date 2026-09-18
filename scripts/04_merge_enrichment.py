@@ -24,6 +24,18 @@ def norm_code(s):
 def norm_name(s):
     return re.sub(r'\s+', ' ', (s or '').strip().lower())
 
+
+def aslist(x):
+    """parquet list columns arrive as numpy arrays, None or pd.NA"""
+    if x is None: return []
+    try:
+        if x is pd.NA: return []
+    except Exception: pass
+    try:
+        return [v for v in list(x) if v is not None and v is not pd.NA]
+    except TypeError:
+        return []
+
 cand = pd.read_parquet(INTER / 'asset_candidates.parquet')
 cand_keys = set(cand.asset_key)
 
@@ -60,29 +72,44 @@ def union(a, b):
 con = duckdb.connect()
 mol = con.sql(f"select id, name, drugType, maximumClinicalStage, [s.label for s in synonyms] syns from '{RAW}/drug_molecule/*.parquet'").fetchall()
 mol_by_id = {m[0]: m for m in mol}
-# link via ChEMBL synonyms (OT already unified code<->INN for ChEMBL-known drugs)
-for _, row in cand.iterrows():
-    k = row.asset_key
-    find(k)
-    for cid in (row.chembl_ids or '').split('|'):
-        m = mol_by_id.get(cid)
-        if not m: continue
-        for s in [m[1]] + list(m[4] or []):
-            for alt in (norm_code(s), norm_name(s)):
-                if alt and alt in cand_keys and alt != k:
-                    union(k, alt)
-# link via research results (inn_or_name, other_codes)
+# sponsor label per key (research beats seed) used to avoid merging different companies' assets
+def key_sponsor(k):
+    r = res.get(k)
+    if r and r.get('sponsor'):
+        return norm_name(r['sponsor']), r.get('sponsor_country'), True
+    row = cand_by_key.get(k)
+    if row is not None and row.company_name_seed:
+        return norm_name(row.company_name_seed), ('CN' if row.origin_seed == 'cn' else 'non-CN'), False
+    return '', 'unknown', False
+cand_by_key = {r.asset_key: r for r in cand.itertuples()}
+
+# Rule R: explicit synonym claims from web research (inn_or_name, other_codes). A claim is trusted unless the
+# other key was itself researched and attributed to a *different* sponsor in the same country class.
 for k, r in res.items():
-    if k not in cand_keys: continue
+    if k not in cand_keys or r.get('sponsor_country') != 'CN':
+        continue
     alts = [r.get('inn_or_name') or ''] + (r.get('other_codes') or '').split('|')
-    for s in alts:
-        for alt in (norm_code(s), norm_name(s)):
-            if alt and alt in cand_keys and alt != k:
-                # only merge if the other key is not classified as a different sponsor
-                ro = res.get(alt)
-                if ro and ro.get('sponsor') and r.get('sponsor') and norm_name(ro['sponsor']) != norm_name(r['sponsor']) and ro.get('sponsor_country') != r.get('sponsor_country'):
-                    continue
-                union(k, alt)
+    for s_ in alts:
+        for alt in (norm_code(s_), norm_name(s_)):
+            if not alt or alt not in cand_keys or alt == k:
+                continue
+            sp_a, c_a, researched = key_sponsor(alt)
+            sp_k = norm_name(r.get('sponsor') or '')
+            if researched and sp_a and sp_a != sp_k and c_a == 'CN':
+                continue
+            union(k, alt)
+
+# Rule S: two keys attributed to the same sponsor that share a ChEMBL molecule id are the same drug (code <-> INN)
+by_chembl = collections.defaultdict(list)
+for row in cand.itertuples():
+    for cid in (row.chembl_ids or '').split('|'):
+        if cid: by_chembl[cid].append(row.asset_key)
+for cid, ks in by_chembl.items():
+    for i in range(len(ks)):
+        for j in range(i + 1, len(ks)):
+            sa, ca, _ = key_sponsor(ks[i]); sb, cb, _ = key_sponsor(ks[j])
+            if sa and sa == sb:
+                union(ks[i], ks[j])
 
 cand['cluster'] = [find(k) for k in cand.asset_key]
 
@@ -107,8 +134,10 @@ def cluster_country(g):
     g = g.assign(rank=g.classification_basis.map(basis_rank) * 10 + g.sponsor_confidence.map(CONF).fillna(0))
     best = g.sort_values('rank', ascending=False).iloc[0]
     return best
-best_by_cluster = cand.groupby('cluster', group_keys=False).apply(cluster_country)
-cn_clusters = set(best_by_cluster[best_by_cluster.sponsor_country == 'CN'].cluster)
+cn_clusters = set()
+for cl, g in cand.groupby('cluster'):
+    if cluster_country(g).sponsor_country == 'CN':
+        cn_clusters.add(cl)
 
 # ---- 4. trial detail + OT mechanism -------------------------------------------------------------
 trials = con.sql(f"select nct_id, url, phase, overall_status, study_type, primary_purpose, start_date, brief_title, official_title, why_stopped, intervention_names, conditions from '{INTER}/ctgov_trials.parquet'").df()
@@ -135,7 +164,7 @@ for cl, g in cand[cand.cluster.isin(cn_clusters)].groupby('cluster'):
     phase_rank = g.max_phase_rank.max()
     conds = collections.Counter()
     for cs in tsub.conditions:
-        for c in (cs or []):
+        for c in aslist(cs):
             if c: conds[c] += 1
     statuses = collections.Counter(tsub.overall_status.fillna('NA'))
     # pick a display name: INN if known, else the code with most trials
@@ -179,7 +208,7 @@ for cl, g in cand[cand.cluster.isin(cn_clusters)].groupby('cluster'):
         trial_rows.append({'asset_id': cl, 'display_name': display, 'nct_id': n, 'phase': t.phase, 'overall_status': t.overall_status,
                            'study_type': t.study_type, 'primary_purpose': t.primary_purpose, 'start_date': t.start_date,
                            'brief_title': t.brief_title, 'official_title': t.official_title, 'why_stopped': t.why_stopped,
-                           'interventions': ' | '.join(t.intervention_names or []), 'conditions': ' | '.join(c for c in (t.conditions or []) if c), 'url': t.url})
+                           'interventions': ' | '.join(aslist(t.intervention_names)), 'conditions': ' | '.join(c for c in aslist(t.conditions) if c), 'url': t.url})
 
 A = pd.DataFrame(assets_out).sort_values(['sponsor', 'display_name'])
 A.to_csv(PROC / 'chinese_clinical_assets.csv', index=False)
